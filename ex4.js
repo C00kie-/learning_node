@@ -19,11 +19,14 @@ var fs = require('fs');
 var path2 = require('path');
 
 function readDir(){
-  fs.readdir(process.argv[2], function (err, list){
-  if (err)
-  {
-    return console.log('error')
-  }
+/*  fs.readFile(process.argv[2], 'utf8', function (err, data) {
+      if (err){
+                return console.log('error')
+              }
+              data = */fs.readdir(process.argv[2], function (err, list){
+      if (err)
+        return console.log('error')
+
     var ext = '.' + process.argv[3];
     var path = process.argv[2];
 
