@@ -16,6 +16,7 @@ The list of files should be printed to the console,
   one file per line. You must use asynchronous I/O.
 */
 var fs = require('fs');
+var path2 = require('path');
 
 function readDir(){
   fs.readdir(process.argv[2], function (err, list){
@@ -24,6 +25,23 @@ function readDir(){
     return console.log('error')
   }
     console.log('dat callback part');
+    var ext = '.' + process.argv[3];
+    var path = process.argv[2];
+
+     console.log(path);
+     console.log(ext);
+
+    var i = 0;
+    while (i <= list.length)
+    {
+    //  console.log(list);
+    //  console.log(list[i]);
+    //  console.log(ext);
+    //  console.log(path2.extname(list[i]));
+      if (ext == path2.extname(list[i]))
+        console.log(list[i]);
+      i++;
+    }
 })
 }
 
