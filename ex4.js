@@ -24,20 +24,12 @@ function readDir(){
   {
     return console.log('error')
   }
-    console.log('dat callback part');
     var ext = '.' + process.argv[3];
     var path = process.argv[2];
-
-     console.log(path);
-     console.log(ext);
 
     var i = 0;
     while (i <= list.length)
     {
-    //  console.log(list);
-    //  console.log(list[i]);
-    //  console.log(ext);
-    //  console.log(path2.extname(list[i]));
       if (ext == path2.extname(list[i]))
         console.log(list[i]);
       i++;
@@ -45,5 +37,4 @@ function readDir(){
 })
 }
 
-console.log('dat fuckkkk ls');
 readDir();
