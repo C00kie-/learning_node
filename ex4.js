@@ -1,7 +1,7 @@
-//ex4 filtered LS
+//ex5 filtered LS
 
 var fs = require('fs');
-var path2 = require('path');
+var path = require('path');
 
 function readDir(){
     fs.readdir(process.argv[2], function (err, list){
@@ -9,12 +9,11 @@ function readDir(){
         return console.log('error')
 
     var ext = '.' + process.argv[3];
-    var path = process.argv[2];
 
     var i = 0;
     while (i <= list.length)
     {
-      if (ext == path2.extname(list[i]))
+      if (ext == path.extname(list[i]))
         console.log(list[i]);
       i++;
     }
