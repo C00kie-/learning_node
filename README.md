@@ -11,4 +11,4 @@ if you use the code to solve your own exercises, please, take the time to really
 
 good luck!
 
-note : all modules are in Node_Modules wich is not commited in this repo. 
+note : all modules are in node_modules wich is not commited in this repo. 
