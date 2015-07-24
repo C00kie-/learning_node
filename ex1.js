@@ -1,4 +1,4 @@
-//ex1
+//ex1 babysteps
 var sum = 0;
 
 function calcul()
