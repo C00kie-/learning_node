@@ -10,3 +10,5 @@ code is quite long etc... but the result of my learning today. Comments are welc
 if you use the code to solve your own exercises, please, take the time to really really understand the exercise and the notions asked.
 
 good luck!
+
+note : all modules are in node_modules wich is not commited in this repo. 
