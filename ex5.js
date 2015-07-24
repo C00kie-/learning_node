@@ -1,7 +1,14 @@
 /*Ex6 Make it Modular*/
+var module = require('lsmodular'),
+    dirName = process.argv[2],
+    ext = process.argv[3];
 
-
-var mymodule = require('lsmodular');
-
-mymodule();
-console.log(typeof(mymodule));
+module(dirName, ext, function (err, files) {
+    if (err) {
+        console.log('error');
+        return;
+    }
+    files.forEach(function (el) {
+        console.log(el);
+    });
+});
