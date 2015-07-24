@@ -8,15 +8,5 @@ var reading;
 
 reading = fs.readFileSync(process.argv[2]);
 var str = reading.toString();
-var res = str.split('\n');
-//console.log(res);
 
-//console.log(res.length);
-
-var count = 0;
-for (i = 1; i < res.length; i++)
-  {
-    count += 1;
-  }
-count = count.toString();
-process.stdout.write(count);
+console.log(str.split('\n').length - 1);
