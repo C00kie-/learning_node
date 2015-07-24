@@ -3,10 +3,7 @@
 and print the number of newlines (\n) it contains to the console (stdout), similar
  to running cat file | wc -l.*/
 
-var fs = require('fs');
-var reading;
+var fs = require('fs')
 
-reading = fs.readFileSync(process.argv[2]);
-var str = reading.toString();
-
-console.log(str.split('\n').length - 1);
+var file = fs.readFileSync(process.argv[2], 'utf8')
+console.log(file.split('\n').length - 1)
