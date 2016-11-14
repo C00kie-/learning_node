@@ -10,7 +10,7 @@ function calcul()
 	var sum = 0;
 	for (i = 1; i < process.argv.length; i++)
 	{
-		if (i >= 2)
+		if (i > 1)
 			sum +=  Number(process.argv[i]);
 	}
 	console.log(sum);
